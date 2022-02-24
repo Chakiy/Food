@@ -17,8 +17,9 @@
       <img src="./img/welcoming/dots.png" alt="dots" />
       <img class="dot2" src="./img/welcoming/dots.png" alt="dots" />
     </div>
+
+    <!-- header -->
     <header class="header">
-      <!-- <div class="navigation"> -->
       <div class="logo">
         <svg
           width="60"
@@ -59,10 +60,12 @@
         <a href="#" class="nav_link">popular</a>
       </nav>
       <a href="#" class="btn">Sign up</a>
-      <!-- </div> -->
     </header>
+
+    <!-- Main -->
     <main class="main">
       <div class="container">
+        <!-- welcoming -->
         <div class="welcoming">
           <div class="welcoming_text">
             <h1 class="welcoming_heading">
@@ -85,9 +88,109 @@
             <img src="./img/welcoming/girl.png" alt="girl food" />
           </div>
         </div>
+
+        <!-- what we do -->
+
+        <div class="about_us">
+          <div class="info_text">
+            <h3 class="info_text_heading">
+              <span class="text_green">WHAT WE DO</span>
+            </h3>
+            <p class="info_text_desc">
+              We help thousands of people reduce food waste.
+            </p>
+          </div>
+          <div class="about_blocks">
+            <div class="about_block">
+              <img src="./img/block_wwd/thinking.png" alt="thinking" />
+              <p class="about_block_text">Quality Recipes</p>
+            </div>
+            <div class="about_block">
+              <img src="./img/block_wwd/phone.png" alt="phone" />
+              <p class="about_block_text">Save on Groceries</p>
+            </div>
+            <div class="about_block">
+              <img src="./img/block_wwd/kitchen.png" alt="kitchen" />
+              <p class="about_block_text">Zero Food Waste</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- what they say -->
+        <div class="customers_talk">
+          <div class="info_text">
+            <h3 class="info_text_heading">
+              <span class="text_green">WHAT THEY SAY </span>
+            </h3>
+            <p class="info_text_desc">What our customers say about us ?</p>
+          </div>
+          <div class="review_blocks">
+            <div class="review_block">
+              <p class="rev_text">
+                I used to throw away veggies that were about to expire. Now I
+                save money and reduce food waste “
+              </p>
+              <div class="cust_img_rev">
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+              </div>
+              <p class="cus_name">Jessica from Canada</p>
+            </div>
+
+            <div class="review_block">
+              <p class="rev_text">
+                I feel that I eat out less and get better at cooking by using
+                their easy websites.
+              </p>
+              <div class="cust_img_rev">
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+              </div>
+              <p class="cus_name">Mark from USA</p>
+            </div>
+
+            <div class="review_block">
+              <p class="rev_text">
+                Its easy to use! I love that I can select my ingredients (:
+              </p>
+              <div class="cust_img_rev">
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+                <img class="rev_img" src="./img/star.svg" alt="star" />
+              </div>
+
+              <p class="cus_name">Sophia from India</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
+
+
+    <!-- Footer -->
+    
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_block">
+            <h3 class="footer_heading">Are you ready to fight against food waste ?</h3>
+            <a href="#" class="btn">join now</a>
+          </div>
+        </div>
+      </footer>
+    
+    
+
+    </footer>
+
+    <!-- Scripta -->
     <script>
       var playBtn = document.getElementById("dzing");
       var hearbeat = document.getElementById("beep-one");
@@ -107,8 +210,8 @@
       playBtn.addEventListener(
         "mouseleave",
         function () {
-          heartbeat.pause();
-          heartbeat.currentTime = 0;
+          hearbeat.pause();
+          hearbeat.currentTime = 0;
         },
         false
       );
