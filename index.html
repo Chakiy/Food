@@ -5,7 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Html Init</title>
+    <title>Food landing page</title>
   </head>
-  <body></body>
+  <body>
+    <audio
+      id="beep-one"
+      src="https://assets.mixkit.co/sfx/preview/mixkit-doorbell-single-press-333.mp3"
+      preload="none"
+    ></audio>
+    <div class="dots">
+      <img src="./img/welcoming/dots.png" alt="dots" />
+      <img class="dot2" src="./img/welcoming/dots.png" alt="dots" />
+    </div>
+    <header class="header">
+      <!-- <div class="navigation"> -->
+      <div class="logo">
+        <svg
+          width="60"
+          height="37"
+          viewBox="0 0 60 37"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M57.239 33.5812H1.80932C0.806623 33.5812 2.28882e-05 34.3471 2.28882e-05 35.2869C2.28882e-05 36.2341 0.810323 37 1.80932 37H57.239C58.2417 37 59.052 36.2341 59.052 35.2869C59.052 34.3471 58.238 33.5812 57.239 33.5812Z"
+            fill="black"
+          />
+          <path
+            id="dzing"
+            class="coup"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M29.5483 4.44366C15.344 4.44366 3.83326 15.5733 3.83326 29.3003H55.2633C55.267 15.5733 43.7489 4.44366 29.5483 4.44366V4.44366Z"
+            fill="#00993E"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M25.8964 0H33.1817V7.2853H25.8964V0Z"
+            fill="black"
+          />
+        </svg>
+        <a href="#" class="logo_text"
+          ><span class="text_green">Food</span>
+          <span class="logo_black">savor</span>
+        </a>
+      </div>
+      <nav class="navigation">
+        <a href="#" class="nav_link active">home</a>
+        <a href="#" class="nav_link">recipe</a>
+        <a href="#" class="nav_link">popular</a>
+      </nav>
+      <a href="#" class="btn">Sign up</a>
+      <!-- </div> -->
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="welcoming">
+          <div class="welcoming_text">
+            <h1 class="welcoming_heading">
+              Reduce Food Waste and <span class="text_green">Save Money</span>
+            </h1>
+            <p class="welcoming_desc">
+              We want to tackle food waste by recommending recipes based on
+              leftover ingredients in the fridge at home
+            </p>
+            <a href="#" class="btn"> Get started</a>
+            <div class="custumers">
+              <img src="./img/welcoming/customers.png" alt="customers" />
+              <div class="customers_stats">
+                <h3 class="customers_heading">Our happy customers</h3>
+                <p class="customers_review">4.8 (450+ reviews)</p>
+              </div>
+            </div>
+          </div>
+          <div class="welcoming_img">
+            <img src="./img/welcoming/girl.png" alt="girl food" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      var playBtn = document.getElementById("dzing");
+      var hearbeat = document.getElementById("beep-one");
+      var audios = document.querySelectorAll("audio");
+
+      playBtn.addEventListener(
+        "mouseenter",
+        function () {
+          [].forEach.call(audios, function (audio) {
+            // do whatever
+            audio.play();
+          });
+        },
+        false
+      );
+
+      playBtn.addEventListener(
+        "mouseleave",
+        function () {
+          heartbeat.pause();
+          heartbeat.currentTime = 0;
+        },
+        false
+      );
+    </script>
+  </body>
 </html>
