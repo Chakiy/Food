@@ -1,3 +1,11 @@
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ruda', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+
 /* Reset */
 
 @import url(./reset.css);
@@ -6,3 +14,32 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans&family=Roboto:wght@400;500;700&family=Ruda&family=Work+Sans:wght@400;700&display=swap');
+
+
+
+
+
+/* Variables */
+
+:root {
+    --important_color: #000;
+    --secondary_color: #4A8251;
+    --block1: #DEEDE0;
+    --block2: #CFE4D2;
+    --btn_link: #7EB685;
+    --btn_link_color: #fff;
+}
+
+
+/* Body */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+
+}
+
+
